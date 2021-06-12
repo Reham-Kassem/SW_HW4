@@ -1,6 +1,9 @@
 
 
 public class Playgroundowner extends User {
+    /**
+ * A {@code Playgroundowner} class that inhert from class User and have the attributes of the Playgroundowner.
+ */
     public Playground playground;
     protected eWallet ewallet;
 
