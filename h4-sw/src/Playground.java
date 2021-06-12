@@ -81,6 +81,11 @@ public class Playground {
         return false;
 
     }
+    /**
+     * The AddSlotToPlayground method  add slot to the playground
+     * @param id is the id of playground
+     * 
+     */
 
     public void AddSlotToPlayground(int id) {
         Playground obj;
@@ -108,7 +113,11 @@ public class Playground {
         }
 
     }
-
+    /**
+     * The bookplayground method  allows the player to book a slot from playground
+     * @param playgroundnum is the id of playground
+     * @param slotid is the id of playground
+     */
 
     public void bookplayground(int playgroundnum, int slotid) {
 
