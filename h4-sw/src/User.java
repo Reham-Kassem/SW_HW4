@@ -1,6 +1,7 @@
 
 
 public class User {
+    
     /**
      * The user name of user
      */
