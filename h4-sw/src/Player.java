@@ -1,7 +1,9 @@
 
 
 import java.util.ArrayList;
-
+/**
+ * A {@code Player} class that inhert from class User and have the attributes of the Player.
+ */
 public class Player extends User {
     public static Playground playground=new Playground();
     private ArrayList<Timeslote> Requests;
@@ -9,7 +11,9 @@ public class Player extends User {
     private Address address;
     private int timeslotendex = 0;
     protected eWallet ewallet;
-
+/**
+ * A {@code Player} defulte constructor.
+ */
     public Player() {
         UserName = "";
         Email = "";
@@ -18,7 +22,15 @@ public class Player extends User {
         address = null;
         
     }
-
+ /**
+     * A paramaterized constructor for the {@code Player} 
+     * @param email email of the player
+     * @param password password of the player
+     * @param un username of the player
+     * @param phonenumber mobile number of the plyer
+     * @param add address of the player
+     */
+    
     public Player(String username, String email, String password, String un, String phonenumber, Address add) {
         UserName = username;
         Email = email;
@@ -28,6 +40,9 @@ public class Player extends User {
 
     }
 //This function is responsible for viewing all the playgrounds.
+ /**
+ * A
+ */
     public void getplayground() {
         //getListOFPlaygrounds is a function implemented in the playground class.
         playground.getListOFPlaygrounds();
