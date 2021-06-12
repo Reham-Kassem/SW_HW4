@@ -3,6 +3,14 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/*
+ * This class allows the  playground owner  to add a playground and slot of this playground  
+ * attributes of this class: playgroundname, description,Price_Per_Hour,PlaygroundNumber,
+ * PlaygroundSlot,ListOFplayground,Status
+ * 
+ * @author Esraa Mosaad zaky
+ */
+ 
 public class Playground {
     Scanner input = new Scanner(System.in);
     private String playgroundname;
@@ -10,14 +18,16 @@ public class Playground {
     private int Price_Per_Hour;
     public static int itsLastIndex = 0;
     public int PlaygroundNumber = 0;
-    private Timeslote PlaygroundSlot;
+    private Timeslote PlaygroundSlot= new Timeslote();
     public static ArrayList<Playground> ListOFplayground = new ArrayList<Playground>();
     private boolean Status;
 
-    Playground() {
-       // ListOFplayground = new ArrayList<Playground>();
-        PlaygroundSlot = new Timeslote();
-    }
+    /**
+     * The AddPlayground method  allows the playground owner to add 
+     * @param name is the playground name
+     * @param playgroundData is the description for the playground
+     * @param price is the price per hour for the playground
+     */
 
     public void AddPlayground(String name, String playgroundData, int price) {
         Playground obj = new Playground();
@@ -32,6 +42,10 @@ public class Playground {
         itsLastIndex++;
 
     }
+    /**
+     * The deletePlayground method  allows the playground owner to delete  playground 
+     * @param id is the id of playground
+     */
     public void deletePlayground(int id) {
         Playground obj;
 
@@ -46,6 +60,11 @@ public class Playground {
         }
 
     }
+    /**
+     * The check method  check if this playground active or not by given play ground Id 
+     * @param id is the id of playground
+     * @return returns true or false
+     */
 
     public boolean check(int id) {
 
