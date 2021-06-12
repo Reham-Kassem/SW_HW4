@@ -130,7 +130,9 @@ public class Playground {
             
         
     }
-
+   /**
+     * The  getListOFPlaygrounds method  play all the playground
+     */
     public void getListOFPlaygrounds() {
         Playground obj;
         for (int i = 0; i < ListOFplayground.size(); i++) {
@@ -160,8 +162,12 @@ public class Playground {
 
         }
     }
-
-    //Prints the information of the playground which have the id in the function argument.
+   
+   /**
+     * The  getplayground method  Prints the information of the playground which have the id in the function argument.
+     *  @param id is the id of playground
+     */
+    
     public void getplayground(int id) {
         Playground obj = ListOFplayground.get(id - 1);
 
@@ -174,7 +180,10 @@ public class Playground {
         System.out.println("-----------------------------------------------------------------------------------------");
 
     }
-
+     /**
+     * The  displayPlayground method  Prints the information of the playground which have the id in the function argument.
+     * @param prise is the prise per hour of playground
+     */
     public void displayPlayground(int prise) {
         Playground obj;
         for (int i = 0; i < ListOFplayground.size(); i++) {
@@ -187,12 +196,17 @@ public class Playground {
 
         }
     }
-
+   /**
+     * The  returnplayground method  return obj from type playground
+     * @param id is the id of playground
+     * @return obj frome type Playground 
+     */
     public Playground returnplayground(int id) {
         Playground obj = ListOFplayground.get(id - 1);
 
         return obj;
     }
+ 
 
     public void setStatus(boolean status) {
         Status = status;
