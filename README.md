@@ -1,4 +1,4 @@
-# SW_HW4
+# Software Engineering_HW4
 This repo includes jave files of playgrounds reservation system application named "GoFo".
 These files are capable of implementing these three main functionalities of the application:
 1) Registering a user (playground owner or player.
